@@ -1,0 +1,19 @@
+DisplayCase 3
+
+Attributes:
+
+location = "front counter"
+lock_code = 12345
+glass_color = "blue"
+contents = ["Cake", "Lemon Meringue Pie", "Cheesecake"]
+locked = true
+
+Methods:
+
+move("by fishtank") does nothing, as locked is true
+input_code(12345) locked = false
+change_code(67890) lock_code = 67890
+insert("Pumpkin Pie") contents = ["Cake", "Lemon Meringue Pie", "Cheesecake", "Pumpkin Pie"]
+remove(2) returns "Cheesecake", contents = ["Cake", "Lemon Meringue Pie", "Pumpkin Pie"]
+change_color("clear") glass_color = "clear"
+lock() locked = true

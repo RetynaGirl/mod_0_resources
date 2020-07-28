@@ -1,0 +1,19 @@
+Class Waiter
+
+Attributes:
+
+name (String)
+wages_per_hour (Float)
+on_clock (Boolean)
+outstanding_pay_dollars (Float)
+dishes_carried (Array, String)
+time_clocked_in_seconds (Int)
+carry_capacity (Int)
+
+Methods:
+
+clock_in() (Sets on_clock to true, puts the current time in seconds past midnight in time_clocked_in_seconds)
+clock_out() (Sets clocked_in to false, multiplies wages_per_hour by the difference between now and time_clocked_in_seconds and adds that to outstanding_pay_dollars)
+set_wage(Float) (sets wages_per_hour to the given value)
+pick_up_dish(String) (Puts the specified dish into dishes_carried, as long as the array is not as long as carry_capacity)
+put_down_dish(Int) (Removes and returns the dish at the given index value of dishes_carried)

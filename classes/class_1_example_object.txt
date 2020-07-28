@@ -1,0 +1,19 @@
+Waiter 263
+
+Attributes:
+
+name = "Billy Bob Joe"
+wages_per_hour = 17.35
+on_clock = true
+outstanding_pay_dollars = 114.68
+dishes_carried = ["Lasagna", "Spaghetti"]
+time_clocked_in_seconds = 32588
+carry_capacity = 5
+
+Methods:
+
+clock_in() (Called at 9:03 AM, currently like 10ish) time_clocked_in_seconds = 32588, on_clock = true
+clock_out() (now its 12:30) on_clock = false, outstanding_pay_dollars = 175.43
+set_wage(21.80) wages_per_hour = 21.80
+pick_up_dish("Pizza") dishes_carried = ["Lasagna", "Spaghetti", "Pizza"]
+put_down_dish(1) returned "Spaghetti", dishes_carried = ["Lasagna", "Pizza"]

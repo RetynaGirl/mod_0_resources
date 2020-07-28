@@ -1,0 +1,19 @@
+Class DisplayCase
+
+Attributes:
+
+location (String)
+lock_code (Int)
+glass_color (String)
+contents (Array, String)
+locked (Boolean)
+
+Methods:
+
+move(String) (Changes the location if locked is false)
+input_code(Int) (If same as lock_code, changes locked to false)
+lock() (Changes lock to true)
+change_code(Int, Int) (First must be current code, second new code. If unlocked and first code is correct, lock_code is changed to second argument)
+insert(String) (If locked is false, adds argument to contents)
+remove(Int) (If locked is false, removes and returns item at index from contents)
+change_color(String) (If locked is false, changes glass_color to new color)
