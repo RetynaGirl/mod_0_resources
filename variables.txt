@@ -1,0 +1,10 @@
+food = "Pizza"
+is_delicious = true
+food = "Haggis"
+num2 = 68
+num7 = 34278
+quotient = num7 / num2
+songs = ["Bohemian Rhapsody", "Under Pressure", "Don't Stop Me Now"]
+songs.shift()
+puts "How many characters are in the food string?"
+char_num = gets.chomp
